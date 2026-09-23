@@ -97,12 +97,12 @@ The existing manual path (`regler_camera`, `prendre_photo`, `/set_controls`, and
 
 The RAW black level **16** and target **0.35** are experimental choices; neither has been calibrated with a dark frame or color target. The central region cannot distinguish a face from a bright wall or door behind it. In mixed lighting, the central P95 can therefore influence the result even when its highlights belong to the background. White balance, shadow correction, contrast, and sharpening still operate on the final image as described in V1; their visible effect can differ from RAW statistics.
 
-## Acknowledgements
-
-Philippe Costes built and tested this project with an Arduino UNO Q, an Arduino UNO Media Carrier, and an IMX219 camera. He carried out the indoor and outdoor exposure experiments, compared automatic and manual results, and assessed the final images.
-
-OpenAI's ChatGPT (Codex) assisted with the V2 automatic exposure implementation, the WebUI integration, interpretation of the RAW measurements, and writing this documentation. The algorithm was refined through discussion and the photographs and measurements supplied by Philippe Costes. The camera tests and evaluation of the results were performed on Philippe's hardware.
-
 Indoor tests included ceiling light, a strong front light, and backlit portraits. Outdoor tests included sunlit walls, shadows, sky, and vegetation. These tests support keeping the current algorithm as the V2 baseline. Further changes to metering should be evaluated against the same scenes so that a gain in one situation does not make another worse.
 
 The V1 source and full architecture explanation remain at [philippe86220/imx219-camera-with-arduino-app-lab](https://github.com/philippe86220/imx219-camera-with-arduino-app-lab).
+
+## Acknowledgements
+
+I built and tested this project with an Arduino UNO Q, an Arduino UNO Media Carrier, and an IMX219 camera. I carried out the indoor and outdoor experiments, compared the manual and automatic results, and evaluated the photographs.
+
+OpenAI's ChatGPT (Codex) helped me develop the V2 automatic exposure algorithm, integrate it into the WebUI, interpret the RAW measurements, and write this documentation. We refined the algorithm together using my photographs and measurements.
