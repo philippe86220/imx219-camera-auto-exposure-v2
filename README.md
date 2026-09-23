@@ -101,7 +101,7 @@ The RAW black level **16** and target **0.35** are experimental choices; neither
 
 Philippe Costes built and tested this project with an Arduino UNO Q, an Arduino UNO Media Carrier, and an IMX219 camera. He carried out the indoor and outdoor exposure experiments, compared automatic and manual results, and assessed the final images.
 
-OpenAI's ChatGPT (Codex) assisted with the V2 automatic exposure implementation, the WebUI integration, interpretation of the RAW measurements, and writing this documentation. The algorithm was refined through discussion and the photographs and measurements supplied by Philippe. The camera tests and evaluation of the results were performed on Philippe's hardware.
+OpenAI's ChatGPT (Codex) assisted with the V2 automatic exposure implementation, the WebUI integration, interpretation of the RAW measurements, and writing this documentation. The algorithm was refined through discussion and the photographs and measurements supplied by Philippe Costes. The camera tests and evaluation of the results were performed on Philippe's hardware.
 
 Indoor tests included ceiling light, a strong front light, and backlit portraits. Outdoor tests included sunlit walls, shadows, sky, and vegetation. These tests support keeping the current algorithm as the V2 baseline. Further changes to metering should be evaluated against the same scenes so that a gain in one situation does not make another worse.
 
