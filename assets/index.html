@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Caméra IMX219</title>
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="style.css"
+  >
+</head>
+
+<body>
+  <h1>Caméra IMX219</h1>
+
+  <div class="reglages">
+    <div class="reglage">
+      <label for="exposure">
+        Exposition :
+        <span id="exposureValue">-</span>
+      </label>
+
+      <input
+        id="exposure"
+        type="range"
+        min="4"
+        max="3522"
+      >
+    </div>
+
+    <div class="reglage">
+      <label for="gain">
+        Gain analogique :
+        <span id="gainValue">-</span>
+      </label>
+
+      <input
+        id="gain"
+        type="range"
+        min="0"
+        max="232"
+      >
+    </div>
+
+    <button id="appliquerReglages">
+      Appliquer les réglages
+    </button>
+  </div>
+
+  <button id="boutonPhoto">
+    Prendre une photo
+  </button>
+
+  <button id="boutonPhotoAuto">
+    Photo avec exposition automatique
+  </button>
+
+  <div id="mesureAuto" aria-live="polite"></div>
+
+  <div id="etat">
+    Prêt
+  </div>
+
+  <img
+    id="photo"
+    alt="Photo de la caméra"
+  >
+
+  <script src="libs/socket.io.min.js"></script>
+  <script src="libs/arduino.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

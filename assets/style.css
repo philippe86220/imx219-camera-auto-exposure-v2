@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 30px;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.reglages {
+  width: 420px;
+  max-width: 90%;
+  margin: 0 auto 25px auto;
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+.reglage {
+  margin-bottom: 20px;
+}
+
+.reglage label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.reglage input {
+  width: 100%;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+#etat {
+  margin: 20px;
+  font-size: 17px;
+}
+
+#photo {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin: 20px auto;
+  border: 1px solid #888;
+}
