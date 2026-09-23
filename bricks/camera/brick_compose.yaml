@@ -1,0 +1,23 @@
+services:
+  camera:
+    image: python:3.13-slim
+    user: root
+    working_dir: /camera
+
+    devices:
+      - /dev/media0
+      - /dev/video0
+      - /dev/v4l-subdev0
+      - /dev/v4l-subdev2
+      - /dev/v4l-subdev4
+      - /dev/v4l-subdev12
+
+    volumes:
+      - .:/camera
+
+    command: >
+      sh -c "
+      apt-get update &&
+      apt-get install -y v4l-utils python3-numpy python3-pil &&
+      exec /usr/bin/python3 /camera/camera_service.py
+      "
