@@ -1,0 +1,7 @@
+name: camera_media_carrier
+description: ""
+ports: []
+bricks:
+  - arduino:web_ui: {}
+  - camera: {}
+icon: 📷
