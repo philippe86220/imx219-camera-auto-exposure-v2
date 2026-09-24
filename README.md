@@ -2,7 +2,7 @@
 
 **V2 continues [the original IMX219 camera project (V1)](https://github.com/philippe86220/imx219-camera-with-arduino-app-lab).** Read the V1 README for the hardware, Arduino UNO Q and Media Carrier setup, App Lab installation, camera brick, Linux camera pipeline, Bayer-to-JPEG processing, and WebUI architecture. Those fundamentals still apply. This README explains the principal change in V2: **automatic exposure**, alongside the retained manual capture controls.
 
-The familiar manual mode is still available. You can set exposure and analogue gain with the sliders, apply the settings, and click Prendre une photo. The additional Photo avec exposition automatique button measures successive RAW frames and adjusts exposure and analogue gain. Once the settings are chosen, the final RAW frame is converted into the displayed JPEG using the same image processing pipeline as V1.
+The familiar manual mode is still available. You can set exposure and analogue gain with the sliders, apply the settings, and click **Prendre une photo**. The additional **Photo avec exposition automatique** button measures successive RAW frames and adjusts exposure and analogue gain. Once the settings are chosen, the final RAW frame is converted into the displayed JPEG using the same image processing pipeline as V1.
 
 ## Taking photos and retaining manual control
 
