@@ -103,6 +103,6 @@ The V1 source and full architecture explanation remain at [philippe86220/imx219-
 
 ## Acknowledgements
 
-I built and tested this project with an Arduino UNO Q, an Arduino UNO Media Carrier, and an IMX219 camera. I carried out the indoor and outdoor experiments, compared the manual and automatic results, and evaluated the photographs.
+Philippe Costes built and tested this project with an Arduino UNO Q, an Arduino UNO Media Carrier, and an IMX219 camera. He carried out the indoor and outdoor exposure experiments, compared automatic and manual results, and assessed the final images.
 
-OpenAI's ChatGPT (Codex) helped me develop the V2 automatic exposure algorithm, integrate it into the WebUI, interpret the RAW measurements, and write this documentation. We refined the algorithm together using my photographs and measurements.
+OpenAI's ChatGPT (Codex) assisted with the V2 automatic exposure implementation, the WebUI integration, interpretation of the RAW measurements, and writing this documentation. The algorithm was refined through discussion and the photographs and measurements supplied by Philippe. The camera tests and evaluation of the results were performed on Philippe's hardware.
