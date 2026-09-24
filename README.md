@@ -20,7 +20,7 @@ A capture begins with a full-resolution **3280 × 2464**, 8-bit RGGB RAW frame. 
 The sampled values are corrected using a provisional RAW black level of **16** and normalized to a range of 0–1:
 
 ```text
-corrected_green = max(raw_green - 16, 0) / (255 - 16)
+corrected = np.maximum(green - RAW_BLACK_LEVEL, 0) / (255 - RAW_BLACK_LEVEL)
 ```
 
 The algorithm measures the whole frame for diagnostics and a central region for control. The central region spans approximately the middle **one third of the width** and **three fifths of the height** of the sampled image. It is a geometric region, not face or subject detection. The median is robust to a limited number of very bright pixels, while the central P95 adds a check on highlights occupying a noticeable part of the central region.
