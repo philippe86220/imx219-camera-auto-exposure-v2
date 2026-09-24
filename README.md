@@ -13,6 +13,8 @@ The familiar manual mode is still available. You can set exposure and analogue g
 
 Exposure is limited to **4–3522** and the IMX219 analogue gain control to **0–232**. These are sensor control values, not milliseconds or ISO numbers. An analogue gain setting of 0 corresponds to approximately 1× gain. The application starts with exposure 2200 and analogue gain 98; the automatic mode starts from the camera's current settings, which may include the previous automatic result.
 
+To save the displayed JPEG, right-click the photo and choose Save Image As… (Enregistrer l’image sous… in a French browser).
+
 ## Automatic exposure algorithm: RAW measurements
 
 A capture begins with a full-resolution **3280 × 2464**, 8-bit RGGB RAW frame. Before demosaicing, white balance, shadow correction, or JPEG encoding, the algorithm samples one position of the green Bayer channel every eight rows and columns. This keeps the measurement small compared with processing every pixel. Green is used as a simple brightness proxy; it does not directly measure the finished JPEG's apparent brightness.
